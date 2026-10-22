@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de 20 Preguntas</title>
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            padding: 20px;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+        .question p {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <h1>Cuestionario</h1>
+    <form id="quizForm">
+        
+        
+        <div class="question">
+            <p>1. ¿Cómo te llamas?</p>
+            <textarea name="p1" placeholder="Escribe tu respuesta aquí..."></textarea>
+        </div>
+
+        <div class="question">
+            <p>2. ¿De dondé nos visitas?</p>
+             <textarea name="p1" placeholder="Escribe tu respuesta aquí..."></textarea>
+        </div>
+
+        <div class="question">
+          <p>3. ¿Eres estudiante?</p>
+            <label><input type="radio" name="p3" value="A"> Si</label>
+            <label><input type="radio" name="p3" value="B"> No</label>
+        </div>
+
+        <div class="question">
+            <p>4. ¿Cúantos años tienes?</p>
+             <textarea name="p1" placeholder="Escribe tu respuesta aquí..."></textarea>
+        </div>
+
+        <div class="question">
+            <p>5. ¿Te gusto mi página web?</p>
+            <label><input type="radio" name="p5" value="A"> Si</label>
+            <label><input type="radio" name="p5" value="B"> No</label>
+        </div>
+
+        <div class="question">
+            <p>6. ¿cúales son tus pasatiempos favoritos?</p>
+            <label><input type="radio" name="p6" value="A"> Dormir</label>
+            <label><input type="radio" name="p6" value="B"> leer libros</label>
+            <label><input type="radio" name="p6" value="C"> Cantar</label>
+            <label><input type="radio" name="p6" value="D"> El deporte</label>
+            <label><input type="radio" name="p6" value="E"> Salir</label>
+            <label><input type="radio" name="p6" value="F"> Estar en casa</label>
+        </div>
+
+        <div class="question">
+            <p>7. ¿Cúal es tu deporte favorito?</p>
+             <textarea name="p1" placeholder="Escribe tu respuesta aquí..."></textarea>
+        </div>
+
+        <div class="question">
+            <p>8. ¿Qué le cambiarias a la página web?</p>
+             <textarea name="p1" placeholder="Escribe tu respuesta aquí..."></textarea>
+        </div>
+
+       <div class="question">
+            <p>9. ¿Te gustan los perros?</p>
+            <label><input type="radio" name="p9" value="A"> Si</label>
+            <label><input type="radio" name="p9" value="B"> No</label>
+        </div>
+
+       <div class="question">
+            <p>10. ¿Te gustan los gatos?</p>
+            <label><input type="radio" name="p10" value="A"> Si</label>
+            <label><input type="radio" name="p10" value="B"> No</label>
+        </div>
+
+       <div class="question">
+            <p>11. De los siguientes ¿Cúales son tus materia favoritas?</p>
+           <label><input type="radio" name="p11" value="A"> Matematicas</label>
+           <label><input type="radio" name="p11" value="B"> Filosofia</label>
+           <label><input type="radio" name="p11" value="C"> Ciencias Naturales</label>
+           <label><input type="radio" name="p11" value="D"> Educacion fisica</label>
+        </div>
+   
+        <div class="question">
+            <p>12. ¿Eres menor o mayor de edad?</p>
+            <label><input type="radio" name="p12" value="A"> Menor</label>
+            <label><input type="radio" name="p12" value="B"> Mayor</label>
+        </div>
+
+        <div class="question">
+            <p>13. ¿Tienes novia/o?</p>
+            <label><input type="radio" name="p13" value="A"> Si</label>
+            <label><input type="radio" name="p13" value="B"> No</label>
+        </div>
+
+        <div class="question">
+            <p>14. ¿Eres casada/o?</p>
+            <label><input type="radio" name="p14" value="A"> Si</label>
+            <label><input type="radio" name="p14" value="B"> No</label>
+        </div>
+
+        <div class="question">
+            <p>15. ¿Hasta que grado estudiaste?</p>
+             <textarea name="p1" placeholder="Escribe tu respuesta aquí..."></textarea>
+        </div>
+
+        <div class="question">
+            <p>16. ¿Eres hombre o mujer?</p>
+            <label><input type="radio" name="p16" value="A"> Mujer</label>
+            <label><input type="radio" name="p16" value="B"> Hombre</label>
+        </div>
+
+        <div class="question">
+            <p>17 ¿Qué cantante es tu favorito?</p>
+             <textarea name="p1" placeholder="Escribe tu respuesta aquí..."></textarea>
+        </div>
+
+        <div class="question">
+            <p>18. ¿Qué genero de musica te gusta?</p>
+             <textarea name="p1" placeholder="Escribe tu respuesta aquí..."></textarea>
+        </div>
+
+        <div class="question">
+            <p>19. ¿De qué municipio eres?</p>
+             <textarea name="p1" placeholder="Escribe tu respuesta aquí..."></textarea>
+        </div>
+
+        <div class="question">
+            <p>20. Elije tu clima favorito</p>
+            <label><input type="radio" name="p20" value="A"> Otoño</label>
+            <label><input type="radio" name="p20" value="B"> Invierno</label>
+            <label><input type="radio" name="p20" value="B"> Verano</label>
+        </div>
+  <button type="submit">Enviar Cuestionario</button>
+    </form>
+    
+</body>
+</html>
+
+
